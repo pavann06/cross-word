@@ -1,0 +1,39 @@
+.grid-container {
+  width: 700px;
+  height: auto;
+  margin-left: 17rem;
+  border-radius: 10px; /* Add border radius */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Add box shadow */
+  
+}
+.grid-container h2{
+   
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 5rem;
+}
+.table{
+  
+    width: 500px;
+    height: auto;
+    margin-top: 2rem;
+    margin-left: 0.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+
+.table-body .td{
+   padding: 3rem;
+}
+.grid-container button {
+    margin-left: 2.5rem;
+    background-color: #007bff;
+    color: white;
+}
+.grid-container button:hover {
+    background-color: #0056b3;
+}

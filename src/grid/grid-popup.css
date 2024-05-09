@@ -1,0 +1,116 @@
+/* PopupGrid.css */
+.popup {
+    position: fixed;
+    width: auto;
+    height: auto;
+    transform: translate(-50%, -50%);
+    background-color: white;
+  
+margin-left: 0.5rem;
+padding-left: 8rem;
+    border: 2px solid black;
+    border-radius: 5px;
+    z-index: 9999; /* Ensure it's on top of other elements */
+  }
+   .overlay h2{
+    display: flex;
+    align-items: center;
+    
+    
+  }
+  #hedding {
+    margin-left: -9rem;
+  }
+  .popup table {
+    margin-bottom: 20px;
+  }
+  
+  .popup button {
+    margin-right: 10px;
+  }
+  .error-cell {
+    border: 2px solid red; /* Add red border to error cells */
+  }
+  
+  .error-cell:focus {
+    outline: none; /* Remove default focus outline */
+  }
+  
+
+
+  .overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* semi-transparent overlay */
+    z-index: 999; /* Ensure it's behind the popup */
+  }
+  input{
+    border: 1px solid black;
+    
+      
+ 
+  }
+ 
+  
+  .button-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+  }
+  
+
+
+
+
+  /*from here*/
+  .overlay {
+    /* Overlay styles */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+  
+  .popup {
+    /* Popup styles */
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  }
+  
+ .popup h2 {
+    /* Heading styles */
+    text-align: center;
+    margin-right: 10rem;
+  }
+  
+  table {
+    /* Table styles */
+    margin: 0 auto; /* Center the table */
+  }
+  
+  td {
+    /* Cell styles */
+    width: 2px; /* Set a smaller width */
+    height: 2px; /* Set a smaller height */
+    text-align: center;
+  }
+  
+  .button-container {
+    /* Button container styles */
+    display: flex;
+    justify-content: space-around; /* Align buttons horizontally */
+    margin-top: 20px;
+  }
+  
+  

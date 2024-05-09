@@ -1,0 +1,60 @@
+/* GridForm.css */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column; /* Align children vertically */
+    
+  
+  }
+  .container h2 {
+    margin-left: 28rem;
+  }
+  
+  .form {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 400px; /* Adjust width as needed */
+    display: flex;
+    flex-direction: column; /* Align children vertically */
+    margin-left: 25rem;
+  }
+  
+  .form-heading {
+    align-self: center; /* Align heading at the top middle */
+  }
+  
+  .form label {
+    margin-bottom: 10px;
+    display: block;
+    width: 300px;
+    margin-left: 40px;
+  }
+  
+  .form input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 15px;
+    border-radius: 15px;
+  }
+  
+  .form button {
+    width: 320px;
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 40px;
+    border-radius: 15px;
+  }
+  
+  .form button:hover {
+    background-color: #0056b3;
+  }
+  
+  
