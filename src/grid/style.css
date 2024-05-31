@@ -57,4 +57,19 @@
     background-color: #0056b3;
   }
   
+  @media screen and (max-width: 600px) {
+    .container{
+      justify-content: center;
+      margin-right: 40rem;
+    }
+    .form {
+        width: 90%; /* Adjust width for smaller screens */
+    }
+
+    .form label {
+        width: 90%; /* Adjust width for smaller screens */
+        max-width: none; /* Remove maximum width */
+        
+    }
+}
   

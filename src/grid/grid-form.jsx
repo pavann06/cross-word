@@ -1,6 +1,3 @@
-
-
-
 import { useState } from "react";
 import "./style.css";
 
@@ -8,7 +5,14 @@ function GridForm() {
   const [rows, setRows] = useState("");
   const [columns, setColumns] = useState("");
   const [letters, setLetters] = useState("");
-  const [errors, setErrors] = useState({});
+  const [level, setLevel] = useState("");
+  const [errors, setErrors] = useState({
+    rows : "",
+    columns:"",
+    letters:"",
+    level:"",
+  });
+  
 
   const validateForm = () => {
     const errors = {};
@@ -24,6 +28,10 @@ function GridForm() {
     if (!letters.trim()) {
       errors.letters = "Letters field is required";
     }
+    if (!level.trim()) {
+      errors.level = "Level field is required";
+    }
+    
 
     setErrors(errors);
     return Object.keys(errors).length === 0;
@@ -31,8 +39,7 @@ function GridForm() {
 
   const handleGetGrid = () => {
     if (validateForm()) {
-      
-      window.location.href = `/grid?rows=${rows}&columns=${columns}&letters=${letters}`;
+      window.location.href = `/grid?rows=${rows}&columns=${columns}&letters=${letters}&level=${level}`;
     }
   };
 
@@ -44,6 +51,7 @@ function GridForm() {
           Rows:
           <input
             type="number"
+            name="rows"
             value={rows}
             onChange={(e) => setRows(e.target.value)}
           />
@@ -54,6 +62,7 @@ function GridForm() {
           Columns:
           <input
             type="number"
+            name="colomns"
             value={columns}
             onChange={(e) => setColumns(e.target.value)}
           />
@@ -64,12 +73,24 @@ function GridForm() {
           Letters:
           <input
             type="text"
+            name="letters"
             value={letters}
             onChange={(e) => setLetters(e.target.value.toUpperCase())}
           />
           {errors.letters && <div className="error">{errors.letters}</div>}
         </label>
         <br />
+        <label>
+          Level :
+          <input
+          type="number"
+          name="level"
+          value={level}
+          onChange={(e) => setLevel(e.target.value)}
+          />
+          {errors.level && <div className="error">{errors.level}</div>}
+        </label>
+
         <button type="button" onClick={handleGetGrid}>
           Get Grid
         </button>
@@ -79,4 +100,3 @@ function GridForm() {
 }
 
 export default GridForm;
-

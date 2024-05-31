@@ -61,6 +61,10 @@ padding-left: 8rem;
     margin-top: 20px;
   }
   
+  .filled-cell {
+    border: 2px solid red;
+  }
+  
 
 
 
